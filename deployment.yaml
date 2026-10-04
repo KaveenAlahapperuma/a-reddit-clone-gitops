@@ -6,14 +6,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: reddit-clone-app:1.0.0-19
+      app: reddit-clone-app
   template:
     metadata:
       labels:
-        app: reddit-clone-app:1.0.0-19
+        app: reddit-clone-app
     spec:
       containers:
-        - name: reddit-clone-app:1.0.0-19
+        - name: reddit-clone-app
           image: kaveend4/reddit-clone-app:1.0.0-19
           resources:
             limits:
